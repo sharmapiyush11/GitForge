@@ -1,0 +1,19 @@
+{
+  "name": "gitforge",
+  "version": "1.0.0",
+  "private": true,
+  "description": "GitForge - Git-Based Version Control & Repository Management System",
+  "scripts": {
+    "install:backend": "npm install --prefix backend-main",
+    "install:frontend": "npm install --prefix frontend-main",
+    "install:all": "npm run install:backend && npm run install:frontend",
+    "build": "npm run install:all && npm run build --prefix frontend-main",
+    "start": "npm start --prefix backend-main",
+    "dev:backend": "npm run dev --prefix backend-main",
+    "dev:frontend": "npm run dev --prefix frontend-main",
+    "test": "npm test --prefix backend-main"
+  },
+  "engines": {
+    "node": "22.x"
+  }
+}

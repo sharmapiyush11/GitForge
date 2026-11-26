@@ -1,0 +1,253 @@
+.gf-repo-container {
+  max-width: 1280px;
+  margin: 0 auto;
+  padding: 24px 20px;
+}
+
+.gf-repo-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 16px;
+  flex-wrap: wrap;
+  margin-bottom: 10px;
+}
+
+.gf-repo-heading {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  flex-wrap: wrap;
+}
+
+.gf-repo-heading h1 {
+  margin: 0;
+  font-size: 1.4rem;
+}
+
+.gf-owner {
+  color: #58a6ff;
+  font-weight: 500;
+}
+
+.gf-repo-actions {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  flex-wrap: wrap;
+}
+
+.gf-branch-pill {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  background-color: #21262d;
+  border: 1px solid #30363d;
+  border-radius: 6px;
+  padding: 4px 10px;
+}
+
+.gf-branch-pill select {
+  background: transparent;
+  border: none;
+  color: #e6edf3;
+  font-size: 0.875rem;
+  font-weight: 500;
+  outline: none;
+}
+
+.gf-branch-pill option {
+  background: #161b22;
+  color: #e6edf3;
+}
+
+.gf-tabs {
+  display: flex;
+  gap: 6px;
+  border-bottom: 1px solid #30363d;
+  margin-bottom: 20px;
+  overflow-x: auto;
+}
+
+.gf-tabs button {
+  background: transparent;
+  border: none;
+  border-bottom: 2px solid transparent;
+  color: #8b949e;
+  padding: 10px 14px;
+  font-size: 0.875rem;
+  font-weight: 500;
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  white-space: nowrap;
+}
+
+.gf-tabs button:hover {
+  color: #e6edf3;
+}
+
+.gf-tabs button.active {
+  color: #f0f6fc;
+  border-bottom-color: #f78166;
+}
+
+.gf-code-layout {
+  display: grid;
+  grid-template-columns: 300px 1fr;
+  gap: 16px;
+  align-items: start;
+}
+
+.gf-two-col {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 16px;
+  align-items: start;
+}
+
+.gf-file-list {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+}
+
+.gf-file-item {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 8px 10px;
+  border-radius: 6px;
+  cursor: pointer;
+  border: 1px solid transparent;
+}
+
+.gf-file-item:hover {
+  background-color: #21262d;
+}
+
+.gf-file-item.active {
+  background-color: rgba(56, 139, 253, 0.15);
+  border-color: rgba(88, 166, 255, 0.4);
+}
+
+.gf-file-name {
+  font-size: 0.875rem;
+  font-weight: 500;
+  color: #e6edf3;
+}
+
+.gf-hash-mini {
+  font-size: 0.74rem;
+  color: #8b949e;
+  font-family: ui-monospace, SFMono-Regular, Menlo, monospace;
+  word-break: break-all;
+}
+
+.gf-icon-btn {
+  background: transparent;
+  border: none;
+  color: #8b949e;
+  padding: 4px;
+  border-radius: 4px;
+}
+
+.gf-icon-btn:hover {
+  color: #f85149;
+}
+
+.gf-editor {
+  width: 100%;
+  background-color: #0d1117;
+  color: #e6edf3;
+  border: 1px solid #30363d;
+  border-radius: 6px;
+  padding: 12px;
+  font-size: 0.85rem;
+  line-height: 1.5;
+  resize: vertical;
+}
+
+.gf-editor:focus {
+  outline: none;
+  border-color: #58a6ff;
+}
+
+.gf-change-card {
+  border: 1px solid #30363d;
+  border-radius: 6px;
+  margin-bottom: 12px;
+  overflow: hidden;
+  background-color: #0d1117;
+}
+
+.gf-change-head {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 8px;
+  padding: 8px 12px;
+  background-color: #161b22;
+  border-bottom: 1px solid #30363d;
+  flex-wrap: wrap;
+}
+
+.gf-diff-box {
+  font-family: ui-monospace, SFMono-Regular, Menlo, monospace;
+  font-size: 0.8rem;
+  overflow-x: auto;
+}
+
+.gf-diff-line {
+  display: grid;
+  grid-template-columns: 36px 36px 20px 1fr;
+  padding: 1px 8px;
+  white-space: pre;
+}
+
+.gf-diff-num {
+  color: #6e7681;
+  user-select: none;
+}
+
+.gf-diff-add {
+  background-color: rgba(46, 160, 67, 0.2);
+  color: #aff5b4;
+}
+
+.gf-diff-del {
+  background-color: rgba(248, 81, 73, 0.2);
+  color: #ffdcd7;
+}
+
+.gf-diff-context {
+  color: #8b949e;
+}
+
+.gf-staged-row,
+.gf-commit-row {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 12px;
+  padding: 10px 0;
+  border-bottom: 1px solid #21262d;
+  flex-wrap: wrap;
+}
+
+.gf-staged-row:last-child,
+.gf-commit-row:last-child {
+  border-bottom: none;
+}
+
+.gf-conflict-panel {
+  border-color: rgba(248, 81, 73, 0.6);
+  background-color: rgba(248, 81, 73, 0.05);
+}
+
+@media (max-width: 900px) {
+  .gf-code-layout,
+  .gf-two-col {
+    grid-template-columns: 1fr;
+  }
+}

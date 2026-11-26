@@ -1,0 +1,23 @@
+services:
+  mongo:
+    image: mongo:7
+    restart: unless-stopped
+    ports:
+      - "27017:27017"
+    volumes:
+      - mongo_data:/data/db
+
+  gitforge:
+    build: .
+    restart: unless-stopped
+    ports:
+      - "3002:3002"
+    environment:
+      PORT: 3002
+      MONGODB_URI: mongodb://mongo:27017/gitforge
+      JWT_SECRET_KEY: change_this_jwt_secret_in_production
+    depends_on:
+      - mongo
+
+volumes:
+  mongo_data:

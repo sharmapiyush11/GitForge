@@ -1,0 +1,10 @@
+node_modules
+backend-main/node_modules
+frontend-main/node_modules
+frontend-main/dist
+.git
+.env
+backend-main/.env
+frontend-main/.env
+.gitforge
+.apnaGit

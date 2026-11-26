@@ -1,0 +1,89 @@
+.gf-navbar {
+  background-color: #010409;
+  border-bottom: 1px solid #30363d;
+  position: sticky;
+  top: 0;
+  z-index: 40;
+}
+
+.gf-navbar-inner {
+  max-width: 1280px;
+  margin: 0 auto;
+  padding: 12px 20px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 16px;
+  flex-wrap: wrap;
+}
+
+.gf-navbar-left {
+  display: flex;
+  align-items: center;
+  gap: 24px;
+  flex-wrap: wrap;
+}
+
+.gf-brand {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  color: #f0f6fc;
+  text-decoration: none;
+}
+
+.gf-brand:hover {
+  text-decoration: none;
+}
+
+.gf-brand-logo {
+  width: 32px;
+  height: 32px;
+}
+
+.gf-brand-title {
+  font-size: 1.05rem;
+  font-weight: 700;
+  display: block;
+  line-height: 1.1;
+}
+
+.gf-brand-sub {
+  font-size: 0.7rem;
+  color: #8b949e;
+  display: block;
+}
+
+.gf-nav-links {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.gf-nav-links a,
+.gf-nav-user {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  padding: 6px 10px;
+  border-radius: 6px;
+  font-size: 0.875rem;
+  font-weight: 500;
+  color: #c9d1d9;
+  text-decoration: none;
+}
+
+.gf-nav-links a:hover,
+.gf-nav-links a.active,
+.gf-nav-user:hover,
+.gf-nav-user.active {
+  background-color: #161b22;
+  color: #ffffff;
+  text-decoration: none;
+}
+
+.gf-navbar-right {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}

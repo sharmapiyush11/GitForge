@@ -1,0 +1,18 @@
+services:
+  - type: web
+    name: gitforge-backend
+    env: node
+    plan: free
+    rootDir: backend-main
+    buildCommand: npm install
+    startCommand: npm start
+    healthCheckPath: /api/health
+    envVars:
+      - key: NODE_ENV
+        value: production
+      - key: MONGODB_URI
+        sync: false
+      - key: JWT_SECRET_KEY
+        generateValue: true
+      - key: CORS_ORIGIN
+        sync: false
