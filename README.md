@@ -109,17 +109,7 @@ CORS_ORIGIN=http://localhost:5173
 ```bash
 npm start
 ```
-Once running locally, open:
-- **Web App**: http://localhost:3002
-- **Sign Up**: http://localhost:3002/signup
-- **Login**: http://localhost:3002/auth
-- **Health Endpoint**: http://localhost:3002/api/health
-
-For hot-reload development (backend on `http://localhost:3002`, Vite dev server on `http://localhost:5173`):
-```bash
-npm run dev:backend
-npm run dev:frontend
-```
+Then open `http://localhost:3002` in your browser (or `http://localhost:5173` when running `npm run dev:backend` and `npm run dev:frontend`).
 
 ### 4. Run Tests & Lint
 ```bash
